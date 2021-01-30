@@ -33,9 +33,11 @@ nav ul li a{
     color: #fff;
     padding: 10px;
     text-transform: uppercase;
+    text-decoration: none;
 }
 nav ul li a:hover, a.active{
     background-color: #3352F2;
+    color: white;
     border-radius: 5px;
 }
 .main-content{
@@ -44,9 +46,10 @@ nav ul li a:hover, a.active{
     gap: 70px;
     align-items: center;
 }
-.booking-form{
+.booking-form , .billing-menu{
     background-color: #fff;
     border: 1px solid #ddd;
+    margin-top: 10px;
     padding: 25px;
     border-radius: 5px;
     float: left;
@@ -61,16 +64,30 @@ nav ul li a:hover, a.active{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
 }
 .inp-width{
     min-width: 300px;
 }
+.inp-style:focus {
+    outline: none;
+}
 .plus-minus-btn{
+    display: flex;
+    align-items: center;
     color: #3352F2;
     font-size: 30px;
     padding: 2px;
-    margin-top: 10px;
+    margin-top: 20px;
     word-spacing: 20px;
+}
+.btn{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    color: #3352F2;
 }
 .booking-form  .calculations{
     margin: 10px 0;
@@ -115,8 +132,51 @@ nav ul li a:hover, a.active{
     color: #fff;
     font-weight: 500;
     background-color:  #3352F2;
+    cursor: pointer;
 }
 .amount{
     display: flex;
     justify-content: space-between;
+}
+.card-option{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.ticket-fare-summary{
+    display: flex;
+    justify-content: space-around;
+}
+.total-tickets{
+    font-family: 'Bebas Neue', cursive;
+    line-height: 20px;
+    margin-top: 4px;
+}
+.class-details{
+    line-height: 5px;
+    padding-top: 8px;
+    text-align: center;
+}
+.total-fare{
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Bebas Neue', cursive;
+}
+#totalFare{
+    font-size: 50px;
+}
+
+.card-item{
+    font-size: 60px;
+}
+.select-option{
+    margin-right: 15px;
+    margin-top: 25px;
+}
+.confirm-button{
+    margin-top : 20px;
+}
+.billing-menu{
+    display: none;
 }
